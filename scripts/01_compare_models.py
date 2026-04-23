@@ -22,7 +22,7 @@ g = 9.81      # gravedad (m/s^2)
 L = 1.0       # longitud (m)
 
 # Condiciones iniciales
-theta0_deg = 30
+theta0_deg = 5  # ángulo inicial en grados
 theta0 = np.deg2rad(theta0_deg)  # convertir a radianes
 omega0 = 0.0
 

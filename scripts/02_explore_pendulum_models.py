@@ -261,3 +261,13 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+L_values = [0.5, 1.0, 1.5, 2.0]   # metros
+theta0_fixed = 40  # grados
+
+errors_max_vs_L = []
+for L in L_values:
+    # Actualizar parámetros globales (g, L, etc.)
+    sol_nl, sol_lin = solve_models(theta0_fixed, L)   # modificar funciones para aceptar L
+    error = sol_nl.y[0] - sol_lin.y[0]
+    errors_max_vs_L.append(np.max(np.abs(error)))
