@@ -23,15 +23,15 @@ g = 9.81
 L = 1.0
 omega0 = 0.0
 
-theta0_deg_list = [5, 10, 20, 40, 60]
+theta0_deg_list = [1, 90, 100, 120, 180]
 
-t_span = (0, 15)
-t_eval = np.linspace(*t_span, 3000)
+t_span = (0, 20)
+t_eval = np.linspace(*t_span, 9000)
 
 SAVE_FIGURES = True
 SAVE_ANIMATION = False   # Cambiar a True si quieres guardar GIF/MP4
 
-ANIMATION_THETA0_DEG = 5
+ANIMATION_THETA0_DEG = 120
 
 # RUTAS
 BASE_DIR = Path(__file__).resolve().parent.parent
